@@ -13,6 +13,11 @@ public class Imports {
 		Random random = new Random();
 		List<String> list = new ArrayList<>();
 
+		System.out.println(List.class.getName());
+		System.out.println(List.class.getSimpleName());
+		System.out.println(List.class.getCanonicalName());
+		System.out.println(List.class.getPackage().getName());
+
 	}
 
 }
