@@ -1,29 +1,14 @@
 package lesson170624;
 
-
 public class FizzBuzz {
-
-	public static void main(String[] args) {
-		System.out.println("start");
-		
-		System.out.println(assertEquals("Hello", "Hello"));
-		System.out.println(assertEquals("Hello", "Hello "));
-
-		String result = fizzBuzz(3);
-
-		System.out.println(assertEquals(result, "Fizz"));
-
-
+	static String fizzBuzz(int i) {
+		String result = "";
+		if (i % 3 == 0) {
+			result += "Fizz";
+		}
+		if (i % 5 == 0) {
+			result += "Buzz";
+		}
+		return "".equals(result) ? Integer.toBinaryString(i) : result;
 	}
-
-	private static String fizzBuzz(int i) {
-		return null;
-	}
-
-
-	public static boolean assertEquals(String actual, String expected) {
-		return actual.equals(expected);
-	}
-
 }
-
