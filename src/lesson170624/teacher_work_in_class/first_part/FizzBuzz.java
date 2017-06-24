@@ -1,4 +1,4 @@
-package lesson170624.inclass;
+package lesson170624.teacher_work_in_class.first_part;
 
 public class FizzBuzz {
 	static String fizzBuzz(int i) {

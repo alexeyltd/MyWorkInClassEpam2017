@@ -1,4 +1,4 @@
-package lesson170620.mywork;
+package lesson170620.my_work_in_class;
 
 public class Main {
 

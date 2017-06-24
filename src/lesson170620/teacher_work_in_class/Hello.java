@@ -1,4 +1,4 @@
-package lesson170620.inclass;
+package lesson170620.teacher_work_in_class;
 
 
 public class Hello {

@@ -1,4 +1,4 @@
-package lesson170624.mywork;
+package lesson170624.my_work_in_class;
 
 public class MathsUtils {
 
