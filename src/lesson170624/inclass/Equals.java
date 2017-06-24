@@ -1,4 +1,4 @@
-package lesson170624;
+package lesson170624.inclass;
 
 public class Equals {
 

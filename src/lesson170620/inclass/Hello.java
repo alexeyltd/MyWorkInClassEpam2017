@@ -1,4 +1,4 @@
-package lesson170620;
+package lesson170620.inclass;
 
 
 public class Hello {
