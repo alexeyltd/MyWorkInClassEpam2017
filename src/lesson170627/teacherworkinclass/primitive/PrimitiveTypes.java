@@ -31,6 +31,12 @@ public class PrimitiveTypes {
 		System.out.println(Integer.toHexString(x));
 		System.out.println(Integer.toOctalString(x));
 
+		String result = "";
+
+		result += 1;
+
+		System.err.println(result);
+
 	}
 
 }
