@@ -2,8 +2,8 @@ package lesson170627.teacherworkinclass.creation;
 
 public class Point {
 
-	int x;
-	int y;
+	final int x;
+	final int y;
 
 	Point() {
 		this(10,10);

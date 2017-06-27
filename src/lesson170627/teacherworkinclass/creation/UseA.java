@@ -19,6 +19,8 @@ public class UseA {
 		new Z();
 		new Z();
 
+		WholePicture.A a = new WholePicture.A();
+
 	}
 
 }
