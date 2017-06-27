@@ -1,4 +1,4 @@
-package mytestframework;
+package lesson170624.myworkinclass.mytestframework;
 
 public class Asserts {
 

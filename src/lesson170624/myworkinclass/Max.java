@@ -1,6 +1,6 @@
 package lesson170624.myworkinclass;
 
-import mytestframework.Asserts;
+import lesson170624.myworkinclass.mytestframework.Asserts;
 
 // Class for test maximus values
 public class Max {
