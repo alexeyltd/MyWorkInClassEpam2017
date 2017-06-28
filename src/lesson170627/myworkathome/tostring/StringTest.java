@@ -16,6 +16,8 @@ public class StringTest {
 		System.out.println(StringUnit.assertNotEquals(StringUtils.toPrintString(Integer.MAX_VALUE), "2147483648"));
 		System.out.println(StringUnit.assertNotEquals(StringUtils.toPrintString(Integer.MIN_VALUE), "2147483648"));
 
+
+		System.out.println(StringUnit.assertEquals(StringUtils.toPrintStringWithBase(10, 2), "0000000A"));
 	}
 
 }
