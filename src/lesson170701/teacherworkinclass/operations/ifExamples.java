@@ -7,23 +7,24 @@ public class ifExamples {
 		if (args.length == 0) {
 			System.out.println("Usage <word>");
 			System.exit(0);
-		} else {
-			System.out.println();
 		}
 
 		process(args[0]);
 
+
 	}
 
 	private static void process(String word) {
-		if ("hello".equals(word)) {
+		if (word.equals("hello")) {
 			System.out.println("hello");
-		} else if ("goodbye".equals(word)) {
+
+		} else if (word.equals("goodbye")) {
 			System.out.println("goodbye");
+
 		} else {
 			System.out.println("what?");
-		}
 
+		}
 	}
 
 }
