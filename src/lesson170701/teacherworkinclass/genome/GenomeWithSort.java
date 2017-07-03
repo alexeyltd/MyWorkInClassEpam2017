@@ -1,5 +1,6 @@
 package lesson170701.teacherworkinclass.genome;
 
+import com.google.common.base.Stopwatch;
 import lesson170629.myworkinclass.DataGenerator;
 import org.jetbrains.annotations.NotNull;
 
@@ -7,6 +8,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+
+import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
 public class GenomeWithSort {
 
@@ -39,6 +42,8 @@ public class GenomeWithSort {
 
 	public static void main(String[] args) {
 
+		Stopwatch stopwatch = Stopwatch.createStarted();
+
 		byte[] data = DataGenerator.generate(GENOME_SIZE);
 
 		List<Word> list = new ArrayList<>();
@@ -51,10 +56,16 @@ public class GenomeWithSort {
 
 		Collections.sort(list);
 
-		for (Word word : list) {
-			byte[] wordBytes = Arrays.copyOfRange(data, word.offset, word.offset + WORD_SIZE);
-			System.out.println(Arrays.toString(wordBytes));
-		}
+		stopwatch.stop();
+
+		long millis = stopwatch.elapsed(MILLISECONDS);
+
+		System.out.println("time: " + stopwatch);
+
+//		for (Word word : list) {
+//			byte[] wordBytes = Arrays.copyOfRange(data, word.offset, word.offset + WORD_SIZE);
+//			System.out.println(Arrays.toString(wordBytes));
+//		}
 
 
 	}
