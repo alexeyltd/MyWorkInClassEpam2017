@@ -5,7 +5,7 @@ public class A {
 	int i;
 	long timestamp;
 
-//	initialization class A for instance
+	//	initialization class A for instance
 	{
 		System.out.println("init A");
 	}
@@ -13,7 +13,7 @@ public class A {
 	public A() {
 		super();
 		System.out.println("const A");
-		 i = 10;
+		i = 10;
 		timestamp = System.currentTimeMillis();
 	}
 

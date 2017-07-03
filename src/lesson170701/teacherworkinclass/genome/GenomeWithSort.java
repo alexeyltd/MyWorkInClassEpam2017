@@ -4,10 +4,7 @@ import com.google.common.base.Stopwatch;
 import lesson170629.myworkinclass.DataGenerator;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 import static java.util.concurrent.TimeUnit.MILLISECONDS;
 
@@ -38,6 +35,14 @@ public class GenomeWithSort {
 
 			return 0;
 		}
+
+		@Override
+		public String toString() {
+			return "Word{" +
+					"data=" + Arrays.toString(data) +
+					", offset=" + offset +
+					'}';
+		}
 	}
 
 	public static void main(String[] args) {
@@ -62,10 +67,11 @@ public class GenomeWithSort {
 
 		System.out.println("time: " + stopwatch);
 
-//		for (Word word : list) {
-//			byte[] wordBytes = Arrays.copyOfRange(data, word.offset, word.offset + WORD_SIZE);
-//			System.out.println(Arrays.toString(wordBytes));
-//		}
+		Set<Word> uniqueSet = new HashSet<Word>(list);
+
+		for (Word word : uniqueSet) {
+			System.out.println(word + ": " + Collections.frequency(list, word));
+		}
 
 
 	}

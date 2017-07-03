@@ -6,7 +6,7 @@ public class Point {
 	final int y;
 
 	Point() {
-		this(10,10);
+		this(10, 10);
 	}
 
 	Point(int x, int y) {
@@ -17,7 +17,6 @@ public class Point {
 	Point(int y) {
 		this(0, y);
 	}
-
 
 
 }

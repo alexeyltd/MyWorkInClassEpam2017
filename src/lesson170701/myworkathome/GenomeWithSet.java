@@ -2,7 +2,6 @@ package lesson170701.myworkathome;
 
 import com.google.common.base.Stopwatch;
 import lesson170629.myworkinclass.DataGenerator;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -76,7 +75,6 @@ public class GenomeWithSet {
 		for (Word word : wordSet) {
 			System.out.println(Arrays.toString(new Word[]{word}));
 		}
-
 
 
 	}

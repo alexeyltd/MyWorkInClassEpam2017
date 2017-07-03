@@ -1,7 +1,5 @@
 package lesson170629.myworkinclass;
 
-import java.util.Arrays;
-
 public class Genome {
 
 	public static void main(String[] args) {
@@ -21,7 +19,8 @@ public class Genome {
 	private static void findDuplicates(byte[] data, int i) {
 		int counter = 0;
 		for (int j = 0; j <= data.length - i; j++) {
-			INNER: for (int k = j + 1; k < data.length - i + 1; k++) {
+			INNER:
+			for (int k = j + 1; k < data.length - i + 1; k++) {
 				for (int l = 0; l < i; l++) {
 					if (data[j + l] != data[k + l]) {
 						continue INNER;

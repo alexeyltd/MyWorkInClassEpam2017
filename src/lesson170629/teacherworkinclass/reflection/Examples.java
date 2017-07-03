@@ -24,7 +24,7 @@ public class Examples {
 		Constructor<A> constructor = c.getConstructor(null);
 		A a2 = constructor.newInstance(null);
 
-		Method m =  c.getMethod("m", null);
+		Method m = c.getMethod("m", null);
 
 //		a.m()
 		m.invoke(a, null);

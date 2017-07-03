@@ -8,7 +8,7 @@ public class Examples {
 
 		long j; // 8
 
-		short  k; // 2
+		short k; // 2
 
 		byte l; // 1
 

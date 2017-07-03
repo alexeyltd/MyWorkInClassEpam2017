@@ -8,7 +8,7 @@ public class SuperExample {
 		}
 	}
 
-	static class B extends A{
+	static class B extends A {
 
 		public B() {
 			super(10);

@@ -7,7 +7,6 @@ public class SwitchProblems {
 		m("Hello", "Bye");
 
 
-
 	}
 
 	private static void m(String first, String last) {

@@ -21,7 +21,8 @@ public class MatrixProcessing {
 		int result = 0;
 		int sum = 0;
 
-		OUTER: for (int i = 0; i < matrix.length; i++) {
+		OUTER:
+		for (int i = 0; i < matrix.length; i++) {
 			int[] row = matrix[i];
 			for (int j = 0; j < row.length; j++) {
 				sum += row[j];
