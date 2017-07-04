@@ -1,4 +1,4 @@
-package lesson170701.myworkathome;
+package lesson170701.myworkathome.Genome;
 
 import com.google.common.base.Stopwatch;
 import lesson170629.myworkinclass.DataGenerator;

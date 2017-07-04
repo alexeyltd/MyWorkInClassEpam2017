@@ -1,4 +1,4 @@
-package lesson170701.myworkathome;
+package lesson170701.myworkathome.Matrix;
 
 public class MatrixGenerator {
 
