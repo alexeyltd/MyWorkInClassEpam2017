@@ -7,8 +7,8 @@ public class ArraysInit {
 	public static void main(String[] args) {
 
 		int[][] m = {
-				{0,0,0},
-				{0,0,0},
+				{0, 0, 0},
+				{0, 0, 0},
 
 		};
 
@@ -30,10 +30,9 @@ public class ArraysInit {
 
 		int[][] triangle = {
 				{0},
-				{1,2},
-				{3,4,5},
+				{1, 2},
+				{3, 4, 5},
 		};
-
 
 
 	}

@@ -1,7 +1,7 @@
 package lesson170701.teacherworkinclass.genome;
 
 import com.google.common.base.Stopwatch;
-import lesson170629.myworkinclass.DataGenerator;
+import lesson170629.myworkinclass.Genome.DataGenerator;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;

@@ -1,4 +1,4 @@
-package lesson170629.myworkinclass;
+package lesson170629.myworkinclass.Genome;
 
 public class Genome {
 

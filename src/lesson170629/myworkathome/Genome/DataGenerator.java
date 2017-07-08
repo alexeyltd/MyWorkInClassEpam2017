@@ -1,4 +1,4 @@
-package lesson170629.myworkinclass;
+package lesson170629.myworkathome.Genome;
 
 
 import java.util.Random;

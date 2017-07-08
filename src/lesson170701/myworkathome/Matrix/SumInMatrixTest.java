@@ -9,8 +9,8 @@ public class SumInMatrixTest {
 //		Random matrix
 //		int[][] matrix = MatrixGenerator.generate(MATRIX_SIZE);
 		int[][] matrix = {
-				{1,0,0},
-				{-1,0,0},
+				{1, 0, 0},
+				{-1, 0, 0},
 
 		};
 		System.out.println(SumInMatrix.countPositive(matrix));

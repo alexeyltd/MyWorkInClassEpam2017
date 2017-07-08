@@ -18,7 +18,7 @@ public class VarArgs {
 
 		System.out.println(Arrays.toString(params));
 
-		for (int value: params) {
+		for (int value : params) {
 			sum += value;
 		}
 

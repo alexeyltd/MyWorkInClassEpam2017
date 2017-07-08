@@ -10,7 +10,7 @@ public class ArraysExamples {
 
 		int[] b;
 
-		b = new int[] {};
+		b = new int[]{};
 
 		b = new int[0];
 
