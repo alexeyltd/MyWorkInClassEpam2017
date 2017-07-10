@@ -1,4 +1,4 @@
-package lesson170707.myworkathome;
+package lesson170707.myworkathome.arraylist;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,8 +7,6 @@ public class MyArrayListE<E> {
 
 //	default capacity in list
 	private static final int CAPACITY = 10;
-//	default init array
-	private static final Object[] CAPACITY_OBJECTS = {};
 
 	private int size;
 
