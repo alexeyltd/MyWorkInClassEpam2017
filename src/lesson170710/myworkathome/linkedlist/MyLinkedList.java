@@ -121,7 +121,7 @@ public class MyLinkedList<E> {
 
 			current = last;
 
-			for (int i = size - 1; i > index; i++) {
+			for (int i = size - 1; i > index; i--) {
 				current = current.prev;
 			}
 
