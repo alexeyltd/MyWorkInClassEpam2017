@@ -4,7 +4,7 @@ public class FinalExamples {
 
 	public static void main(String[] args) {
 
-		int x = 10;
+		final int x = 10;
 
 		process(x);
 
