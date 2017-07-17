@@ -1,4 +1,4 @@
-package lesson170624;
+package lesson170624.isfibonacci;
 
 import main.lesson170624.myworkathome.isfibonacci.FibonacciUtils;
 
