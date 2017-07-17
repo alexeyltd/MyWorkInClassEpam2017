@@ -1,4 +1,4 @@
-package main.Solitaire;
+package main.lesson170717.teacherworkinclass.SolitaireTest;
 
 import java.awt.*;
 import java.util.Random;
@@ -125,7 +125,7 @@ class TablePile extends CardPile {
 			return;
 		}
 
-		// else see if any suit pile can take card
+		// else see if any getSuit pile can take card
 		topCard = pop();
 		for (int i = 0; i < 4; i++) {
 			if (Solitare.suitPile[i].canTake(topCard)) {
@@ -218,7 +218,7 @@ public class Solitare {
 
 		public SolitareFrame() {
 			setSize(600, 500);
-			setTitle("Solitaire Game");
+			setTitle("SolitaireTest Game");
 			addMouseListener (new MouseKeeper());
 			Button restartButton = new Button("New Game");
 			restartButton.addActionListener(new RestartButtonListener());

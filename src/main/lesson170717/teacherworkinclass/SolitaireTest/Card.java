@@ -1,4 +1,4 @@
-package main.Solitaire;
+package main.lesson170717.teacherworkinclass.SolitaireTest;
 
 import java.awt.*;
 
@@ -10,7 +10,7 @@ public class Card {
 	final public static int spade = 1;
 	final public static int diamond = 2;
 	final public static int club = 3;
-	// internal data fields for rank and suit
+	// internal data fields for getRank and getSuit
 	private boolean faceup;
 	private int r;
 	private int s;

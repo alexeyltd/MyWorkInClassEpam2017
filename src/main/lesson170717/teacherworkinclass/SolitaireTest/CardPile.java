@@ -1,4 +1,4 @@
-package main.Solitaire;
+package main.lesson170717.teacherworkinclass.SolitaireTest;
 
 import java.awt.*;
 import java.util.Stack;
