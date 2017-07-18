@@ -2,7 +2,7 @@ package main.Solitare;
 
 class DeckPile extends CardPile {
 
-	DeckPile(int x, int y) {
+	DeckPile(final int x, final int y) {
 		// first initialize parent
 		super(x, y);
 		// then create the new deck
@@ -33,10 +33,10 @@ class DeckPile extends CardPile {
 	}
 
 	@Override
-	public void select(int tx, int ty) {
+	public void select(final int tx, final int ty) {
 		if (empty()) {
 			return;
 		}
-		Solitare.discardPile.push(pop());
+		Solitaire.discardPile.push(pop());
 	}
 }

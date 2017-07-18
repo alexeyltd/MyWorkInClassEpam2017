@@ -2,30 +2,29 @@ package main.Solitare;
 
 import java.awt.*;
 
- class CardPile {
+class CardPile {
 
 	 // coordinates of the card pile
 	 protected int x;
 	 protected int y;
 	 private Card firstCard;
 
-	CardPile(int xCoord, int yCoord) {
+	CardPile(final int xCoord, final int yCoord) {
 		x = xCoord;
 		y = yCoord;
 		firstCard = null;
 	}
 
 	// access to cards are not overridden
-
-	public Card top() {
+	Card top() {
 		return firstCard;
 	}
 
-	public boolean empty() {
+	boolean empty() {
 		return firstCard == null;
 	}
 
-	 public void push(Card aCard) {
+	 public void push(final Card aCard) {
 		 aCard.link = firstCard;
 		 firstCard = aCard;
 	 }
@@ -41,16 +40,15 @@ import java.awt.*;
 
 	// the following are sometimes overridden
 
-	public boolean includes(int clickX, int clickY) {
-		return x <= clickX && clickX <= x + Card.width &&
-				y <= clickY && clickY <= y + Card.height;
+	public boolean includes(final int clickX, final int clickY) {
+		return x <= clickX && clickX <= x + Card.width && y <= clickY && clickY <= y + Card.height;
 	}
 
-	public void select(int tx, int ty) {
-		// do nothing
+	public void select(final int tx, final int ty) {
+
 	}
 
-	public void display(Graphics g) {
+	public void display(final Graphics g) {
 		g.setColor(Color.black);
 		if (firstCard == null) {
 			g.drawRect(x, y, Card.width, Card.height);
@@ -59,7 +57,7 @@ import java.awt.*;
 		}
 	}
 
-	public boolean canTake(Card aCard) {
+	public boolean canTake(final Card aCard) {
 		return false;
 	}
 }

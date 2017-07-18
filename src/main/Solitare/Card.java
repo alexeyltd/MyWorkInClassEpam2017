@@ -7,25 +7,24 @@ class Card {
 	// data fields for colors and suits
 	final static int width = 50;
 	final static int height = 70;
-	final static int red = 0;
-	final static int black = 1;
-	final static int heart = 0;
-	final static int spade = 1;
-	final static int diamond = 2;
-	final static int club = 3;
-	//private static String names[] = {"A", "2", "3", "4", "5", "6",
-//	"7", "8", "9", "10", "J", "Q", "K"};
+	private final static int red = 0;
+	private final static int black = 1;
+	private final static int heart = 0;
+	private final static int spade = 1;
+	private final static int diamond = 2;
+	private final static int club = 3;
+
 	// data fields
 	private boolean faceup;
 	private int rank;
 	private int suit;
 
 	Card link;
-	private static final String[] names = new String[]{"A", "2", "3", "4", "5", "6",
+	private static final String[] names = new String[] {"A", "2", "3", "4", "5", "6",
 			"7", "8", "9", "10", "J", "Q", "K"};
 
 	// constructor
-	Card(int sv, int rv) {
+	Card(final int sv, final int rv) {
 		suit = sv;
 		rank = rv;
 		faceup = false;
@@ -33,30 +32,30 @@ class Card {
 	}
 
 	// access attributes of card
-	public int getRank() {
+	int getRank() {
 		return rank;
 	}
 
-	public int getSuit() {
+	int getSuit() {
 		return suit;
 	}
 
-	public boolean isFaceUp() {
+	boolean isFaceUp() {
 		return faceup;
 	}
 
-	public void flip() {
+	void flip() {
 		faceup = !faceup;
 	}
 
-	public int getColor() {
+	int getColor() {
 		if (getSuit() == heart || getSuit() == diamond) {
 			return red;
 		}
 		return black;
 	}
 
-	public void draw(Graphics g, final int x, final int y) {
+	void draw(final Graphics g, final int x, final int y) {
 		// clear rectangle, draw border
 		g.clearRect(x, y, width, height);
 		g.setColor(Color.black);
