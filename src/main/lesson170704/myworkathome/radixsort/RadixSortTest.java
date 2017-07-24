@@ -1,6 +1,5 @@
 package main.lesson170704.myworkathome.radixsort;
 
-import com.google.common.base.Stopwatch;
 
 import java.util.Arrays;
 
@@ -15,27 +14,27 @@ public class RadixSortTest {
 
 		arrayInit(arrayOne);
 
-		Stopwatch stopwatch = Stopwatch.createStarted();
+//		Stopwatch stopwatch = Stopwatch.createStarted();
 
 		RadixSort.radixSort(arrayOne);
 
-		stopwatch.stop();
+//		stopwatch.stop();
 
 		System.out.println(Arrays.toString(arrayOne));
-		System.out.println(stopwatch);
+//		System.out.println(stopwatch);
 
 		int[] arrayTwo = new int[ARRAY_SIZE];
 
 		arrayInit(arrayTwo);
 
-		Stopwatch stopwatchTwo = Stopwatch.createStarted();
+//		Stopwatch stopwatchTwo = Stopwatch.createStarted();
 
 		Arrays.sort(arrayTwo);
 
-		stopwatchTwo.stop();
+//		stopwatchTwo.stop();
 
 		System.out.println(Arrays.toString(arrayTwo));
-		System.out.println(stopwatchTwo);
+//		System.out.println(stopwatchTwo);
 
 
 	}

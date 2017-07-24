@@ -1,6 +1,5 @@
 package main.lesson170701.teacherworkinclass.genome;
 
-import com.google.common.base.Stopwatch;
 import main.lesson170629.myworkinclass.Genome.DataGenerator;
 import org.jetbrains.annotations.NotNull;
 
@@ -47,7 +46,7 @@ public class GenomeWithSort {
 
 	public static void main(String[] args) {
 
-		Stopwatch stopwatch = Stopwatch.createStarted();
+//		Stopwatch stopwatch = Stopwatch.createStarted();
 
 		byte[] data = DataGenerator.generate(GENOME_SIZE);
 
@@ -61,11 +60,11 @@ public class GenomeWithSort {
 
 		Collections.sort(list);
 
-		stopwatch.stop();
+//		stopwatch.stop();
 
-		long millis = stopwatch.elapsed(MILLISECONDS);
+//		long millis = stopwatch.elapsed(MILLISECONDS);
 
-		System.out.println("time: " + stopwatch);
+//		System.out.println("time: " + stopwatch);
 
 		Set<Word> uniqueSet = new HashSet<Word>(list);
 

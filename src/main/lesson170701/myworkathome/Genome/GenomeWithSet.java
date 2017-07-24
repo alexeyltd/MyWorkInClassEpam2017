@@ -1,6 +1,5 @@
 package main.lesson170701.myworkathome.Genome;
 
-import com.google.common.base.Stopwatch;
 import main.lesson170629.myworkinclass.Genome.DataGenerator;
 
 import java.util.Arrays;
@@ -48,7 +47,7 @@ public class GenomeWithSet {
 
 	public static void main(String[] args) {
 
-		Stopwatch stopwatch = Stopwatch.createStarted();
+//		Stopwatch stopwatch = Stopwatch.createStarted();
 
 		byte[] data = DataGenerator.generate(GENOME_SIZE);
 
@@ -64,11 +63,11 @@ public class GenomeWithSet {
 			countRepeat++;
 		}
 
-		stopwatch.stop();
+//		stopwatch.stop();
 
-		long millis = stopwatch.elapsed(MILLISECONDS);
+//		long millis = stopwatch.elapsed(MILLISECONDS);
 
-		System.out.println("time: " + stopwatch);
+//		System.out.println("time: " + stopwatch);
 
 		System.out.println(countRepeat);
 
