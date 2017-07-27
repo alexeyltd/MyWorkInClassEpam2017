@@ -1,17 +1,24 @@
 package main.lesson170724.myworkathome.nested;
 
-public class Hungry {
+public class Hungry implements Brain {
 
-	void bark() {
-		System.out.println("bark");
+	Rat rat = new Rat();
+
+	@Override
+	public void feed() {
+		rat.bark();
 	}
 
-	void playWithToy() {
-		System.out.println("playing with toy");
+	@Override
+	public void play() {
+		rat.playWithToy();
 	}
 
-	void clean() {
-		System.out.println("cleaning myself");
+	@Override
+	public void clean() {
+		rat.cleans();
 	}
+
+
 
 }

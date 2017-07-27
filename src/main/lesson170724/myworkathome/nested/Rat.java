@@ -2,9 +2,7 @@ package main.lesson170724.myworkathome.nested;
 
 public class Rat implements Pet {
 
-	Hungry hungry = new Hungry();
-
-	Brain brainOuter = new HungryHelper(hungry);
+	Brain brainOuter = new Hungry();
 
 	@Override
 	public void feed() {
@@ -19,6 +17,18 @@ public class Rat implements Pet {
 	@Override
 	public void clean() {
 		brainOuter.clean();
+	}
+
+	void bark() {
+		System.out.println("bark");
+	}
+
+	void playWithToy() {
+		System.out.println("playing with toy");
+	}
+
+	void cleans() {
+		System.out.println("cleaning myself");
 	}
 
 }
