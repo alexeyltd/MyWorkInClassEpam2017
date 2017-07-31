@@ -9,8 +9,13 @@ public class UseStack {
 		boolean success = false;
 		try {
 			stack.push("one");
+//			stack.push(null);
 			stack.push("two");
 			success = stack.push("three");
+		} catch (Overflow overflow) {
+			System.err.println("Stack overflow occured with size " + overflow.getSize());
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

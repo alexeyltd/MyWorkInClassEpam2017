@@ -18,8 +18,11 @@ public class MyStack<E> {
 	}
 
 	public boolean push(E value) throws Exception {
+		if(value == null) {
+			throw new IllegalArgumentException("nulls are not allowed");
+		}
 		if (size >= elements.length) {
-			throw new Exception("Stack overflow");
+			throw new Overflow(size);
 		}
 		elements[size++] = value;
 		return true;
