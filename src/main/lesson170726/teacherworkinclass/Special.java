@@ -6,7 +6,7 @@ public interface Special {
 
 	}
 
-	Special special = () -> System.out.println("I an exceptional!");
+	Special special = () -> System.out.println("Cleaning an exceptional!");
 
 	//	factory method
 	static Special createDefaultImlp() {

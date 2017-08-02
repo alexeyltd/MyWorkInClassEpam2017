@@ -11,7 +11,7 @@ public class FinalizeExample {
 
 		@Override
 		protected void finalize() throws Throwable {
-			System.out.println("I'm dying ...");
+			System.out.println("Cleaning'm dying ...");
 		}
 
 	}
