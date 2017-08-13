@@ -40,7 +40,7 @@ public class Card {
 	}
 
 	public void draw (Graphics g, int x, int y) {
-		String names[] = {"A", "2", "3", "4", "5", "6",
+		String names[] = {"B", "2", "3", "4", "5", "6",
 				"7", "8", "9", "10", "J", "Q", "K"};
 		// clear rectangle, draw border
 		g.clearRect(x, y, width, height);

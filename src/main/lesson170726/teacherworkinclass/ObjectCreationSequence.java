@@ -13,11 +13,11 @@ public class ObjectCreationSequence {
 class G {
 
 	{
-		System.out.println("init A");
+		System.out.println("init B");
 	}
 
 	G() {
-		System.out.println("construct A");
+		System.out.println("construct B");
 	}
 
 }

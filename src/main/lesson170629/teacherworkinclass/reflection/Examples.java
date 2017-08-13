@@ -17,7 +17,7 @@ public class Examples {
 
 		}
 
-//		A a = new A();
+//		B a = new B();
 
 		A a = (A) c.newInstance();
 

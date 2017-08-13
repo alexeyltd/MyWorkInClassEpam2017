@@ -6,10 +6,10 @@ public class B {
 
 		A a = new A();
 
-//		A.m1(); non static
-//		A.m2();
-//		A.m3();
-//		A.m4();
+//		B.m1(); non static
+//		B.m2();
+//		B.m3();
+//		B.m4();
 
 //		a.m1(); private
 		a.m2();

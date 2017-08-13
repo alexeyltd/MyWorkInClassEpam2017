@@ -20,7 +20,7 @@ class Card {
 	private int suit;
 
 	Card link;
-	private static final String[] names = new String[] {"A", "2", "3", "4", "5", "6",
+	private static final String[] names = new String[] {"B", "2", "3", "4", "5", "6",
 			"7", "8", "9", "10", "J", "Q", "K"};
 
 	// constructor

@@ -14,6 +14,7 @@ public class MyHashMap<E> implements Iterable<MyHashMap.Pair<E>> {
 	public static class Pair<T> {
 		T key;
 		T value;
+//		todo add here hash
 		Pair(final T key, final T value) {
 			this.key = key;
 			this.value = value;

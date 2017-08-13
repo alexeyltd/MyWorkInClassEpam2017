@@ -5,20 +5,20 @@ public class A {
 	int i;
 	long timestamp;
 
-	//	initialization class A for instance
+	//	initialization class B for instance
 	{
-		System.out.println("init A");
+		System.out.println("init B");
 	}
 
 	public A() {
 		super();
-		System.out.println("const A");
+		System.out.println("const B");
 		i = 10;
 		timestamp = System.currentTimeMillis();
 	}
 
 	{
-		System.out.println("init2 A");
+		System.out.println("init2 B");
 	}
 
 }

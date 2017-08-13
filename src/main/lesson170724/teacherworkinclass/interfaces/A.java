@@ -10,7 +10,7 @@ class A implements Serializable {
 
 	@Override
 	public String toString() {
-		return "A{" +
+		return "B{" +
 				"x=" + x +
 				", s='" + s + '\'' +
 				'}';
