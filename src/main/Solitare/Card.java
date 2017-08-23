@@ -7,66 +7,60 @@ class Card {
 	// data fields for colors and suits
 	final static int width = 50;
 	final static int height = 70;
-	private final static int red = 0;
-	private final static int black = 1;
-	private final static int heart = 0;
-	private final static int spade = 1;
-	private final static int diamond = 2;
-	private final static int club = 3;
+	final static int red = 0;
+	final static int black = 1;
+	final static int heart = 0;
+	final static int spade = 1;
+	final static int diamond = 2;
+	final static int club = 3;
 
+	private static final String names[] = {"A", "2", "3", "4", "5", "6",
+		"7", "8", "9", "10", "J", "Q", "K"};
 	// data fields
 	private boolean faceup;
 	private int rank;
 	private int suit;
-
-	Card link;
-	private static final String[] names = new String[] {"B", "2", "3", "4", "5", "6",
-			"7", "8", "9", "10", "J", "Q", "K"};
-
+	public Card link;
 	// constructor
-	Card(final int sv, final int rv) {
-		suit = sv;
-		rank = rv;
+
+	Card(int suitValue, int RankValue) {
+		suit = suitValue;
+		rank = RankValue;
 		faceup = false;
 		link = null;
 	}
-
 	// access attributes of card
-	int getRank() {
+
+	public int getRank() {
 		return rank;
 	}
 
-	int getSuit() {
+	public int getSuit() {
 		return suit;
 	}
 
-	boolean isFaceUp() {
+	public boolean isFaceUp() {
 		return faceup;
 	}
 
-	void flip() {
+	public void flip() {
 		faceup = !faceup;
 	}
 
-	int getColor() {
-		if (getSuit() == heart || getSuit() == diamond) {
+	public int getColor() {
+		if (getSuit() == heart || getSuit() == diamond)
 			return red;
-		}
 		return black;
 	}
 
-	void draw(final Graphics g, final int x, final int y) {
+	public void draw(Graphics g, int x, int y) {
 		// clear rectangle, draw border
 		g.clearRect(x, y, width, height);
 		g.setColor(Color.black);
 		g.drawRect(x, y, width, height);
 		// draw body of card
 		if (isFaceUp()) {
-			if (getColor() == red) {
-				g.setColor(Color.red);
-			} else {
-				g.setColor(Color.blue);
-			}
+			g.setColor(getColor() == red ? Color.red : Color.blue);
 			g.drawString(names[getRank()], x + 3, y + 15);
 			switch (getSuit()) {
 				case heart:

@@ -13,7 +13,7 @@ public class ConstructorDependecyExample {
 		}
 
 		return new BigTroll();
-	};
+	}
 
 	static class B implements Worker {
 		public void doIt() {

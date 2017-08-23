@@ -4,30 +4,26 @@ import java.awt.*;
 
 class CardPile {
 
-	 // coordinates of the card pile
-	 protected int x;
-	 protected int y;
-	 private Card firstCard;
+	// coordinates of the card pile
+	protected int x;
+	protected int y;
+	private Card firstCard;
 
-	CardPile(final int xCoord, final int yCoord) {
+	CardPile(int xCoord, int yCoord) {
 		x = xCoord;
 		y = yCoord;
 		firstCard = null;
 	}
-
 	// access to cards are not overridden
-	Card top() {
+
+
+	public Card top() {
 		return firstCard;
 	}
 
-	boolean empty() {
+	public boolean empty() {
 		return firstCard == null;
 	}
-
-	 public void push(final Card aCard) {
-		 aCard.link = firstCard;
-		 firstCard = aCard;
-	 }
 
 	public Card pop() {
 		Card result = null;
@@ -37,27 +33,31 @@ class CardPile {
 		}
 		return result;
 	}
-
 	// the following are sometimes overridden
 
-	public boolean includes(final int clickX, final int clickY) {
+
+	public boolean includes(int clickX, int clickY) {
 		return x <= clickX && clickX <= x + Card.width && y <= clickY && clickY <= y + Card.height;
 	}
 
-	public void select(final int tx, final int ty) {
-
+	public void select(int tx, int ty) {
+		// do nothing
 	}
 
-	public void display(final Graphics g) {
+	public void addCard(Card aCard) {
+		aCard.link = firstCard;
+		firstCard = aCard;
+	}
+
+	public void display(Graphics g) {
 		g.setColor(Color.black);
-		if (firstCard == null) {
+		if (firstCard == null)
 			g.drawRect(x, y, Card.width, Card.height);
-		} else {
+		else
 			firstCard.draw(g, x, y);
-		}
 	}
 
-	public boolean canTake(final Card aCard) {
+	public boolean canTake(Card aCard) {
 		return false;
 	}
 }
