@@ -1,6 +1,5 @@
 package main.lesson170821.teacherworkinclass;
 
-import a.e.T;
 
 public class EffectivelyFinalVariables {
 
