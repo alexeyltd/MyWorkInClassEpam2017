@@ -20,28 +20,6 @@ public class UseWorker {
 			System.out.println(" world!");
 		});
 
-		worker.execute(() -> {
-			System.out.println(" world!");
-		});
-
-		worker.execute(() -> {
-			System.out.println(" world!");
-		});
-
-		worker.execute(() -> {
-			System.out.println(" world!");
-		});
-
-		BlockingQueue<Runnable> runnables = worker.shutDownNow();
-
-		System.out.println(runnables);
-
-		worker.execute(() -> {
-			System.out.println(" world!");
-		});
-		worker.execute(() -> {
-			System.out.println(" world!");
-		});
 
 	}
 
